@@ -68,7 +68,14 @@ if ! command -v git >/dev/null; then
     echo "${RED}Git is not installed. Please install Git to continue.${RESET}"
     exit 1
 fi
-read -p "Attention! By continuing you confirm having a working web server (Lighttpd / Apache) with PHP (5+) setup that is properly configured and running. Continue? (Y/N): " confirm && [[ $confirm == [yY] || $confirm == [yY][eE][sS] ]] || exit 1
+
+# auto Install lighttpd if not already installed 
+if ! command -v lighttpd >/dev/null; then
+    sudo apt-get update
+    sudo apt-get install -y lighttpd
+fi
+
+
 hostn="`hostname`"
 cecho -c 'blue' "This setup will install the RPi Dashboard to -> /var/www/html/"
 _process "Please choose a subfolder name. This name will be part of the address http://$hostn/{your_subfolder_name} with which you can access your RPi dashboard within your local network."
