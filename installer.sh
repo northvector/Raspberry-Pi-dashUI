@@ -91,7 +91,7 @@ while [[ -z "$subfoldern" ]]; do
     fi
 done
 _process "Creating subfolder /var/www/html/$subfoldern ..."
-sudo mkdir -p /var/www/html/$subfoldern
+mkdir -p /var/www/html/$subfoldern
 # Check if mkdir succeeded
 if [ $? -ne 0 ]; then
     echo
