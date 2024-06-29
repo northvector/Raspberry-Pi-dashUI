@@ -47,6 +47,7 @@ $string = trim(preg_replace('/\s\s+/', '', shell_exec("hostname")));
 <link rel="stylesheet" href="css/bootstrap-5.3.2.min.css">
 <link rel="stylesheet" href="css/bootstrap-icons-1.11.1.css">
 <link rel="stylesheet" href="css/mdtoast.min.css?v=2.0.2">
+<link rel="stylesheet" href="css/index.css?<?=md5_file("css/index.css");?>">
 
 <title><?php system("hostname");?> - Loading...</title>
 
