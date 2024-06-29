@@ -99,7 +99,7 @@ if [ $? -ne 0 ]; then
     echo "${YELLOW}Please make sure that the folder /var/www/html/ exists (if not, make sure a web server is installed first) and that you have necessary permissions to write into that folder.${RESET}"
     exit 1
 fi
-git clone https://github.com/femto-code/Raspberry-Pi-Dashboard /var/www/html/$subfoldern
+git clone https://github.com/northvector/Raspberry-Pi-dashUI /var/www/html/$subfoldern
 _process "Setting up valid permissions for /var/www/html/$subfoldern ..."
 chown -R ${whoami}:www-data /var/www/html/$subfoldern
 chmod -R 775 /var/www/html/$subfoldern
