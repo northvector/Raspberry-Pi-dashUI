@@ -73,6 +73,8 @@ fi
 if ! command -v lighttpd >/dev/null; then
     sudo apt-get update
     sudo apt-get install -y lighttpd
+    sudo lighttpd-enable-mod fastcgi fastcgi-php
+    sudo service lighttpd force-reload
 fi
 
 
@@ -89,7 +91,7 @@ while [[ -z "$subfoldern" ]]; do
     fi
 done
 _process "Creating subfolder /var/www/html/$subfoldern ..."
-mkdir -p /var/www/html/$subfoldern
+sudo mkdir -p /var/www/html/$subfoldern
 # Check if mkdir succeeded
 if [ $? -ne 0 ]; then
     echo
