@@ -22,7 +22,10 @@ body,
 .mdtoast {
     font-family: 'Rubik', sans-serif;
 }
-
+.card{
+    --bs-card-bg: #00000070 !important;
+    backdrop-filter: blur(3px);
+}
 body{
     background-image: linear-gradient(rgb(9, 9, 11), rgb(17, 24, 39)) !important;
 }
