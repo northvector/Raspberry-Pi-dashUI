@@ -91,6 +91,14 @@ while [[ -z "$subfoldern" ]]; do
     fi
 done
 _process "Creating subfolder /var/www/html/$subfoldern ..."
+sudo groupadd -f www-data
+sudo usermod -a -G www-data www-data
+sudo usermod -a -G www-data "$USER"
+
+sudo chown -R "$USER":www-data /var/www/html
+sudo chmod -R 755 /var/www/html
+
+
 mkdir -p /var/www/html/$subfoldern
 # Check if mkdir succeeded
 if [ $? -ne 0 ]; then
@@ -99,9 +107,19 @@ if [ $? -ne 0 ]; then
     echo "${YELLOW}Please make sure that the folder /var/www/html/ exists (if not, make sure a web server is installed first) and that you have necessary permissions to write into that folder.${RESET}"
     exit 1
 fi
-git clone https://github.com/northvector/Raspberry-Pi-dashUI /var/www/html/$subfoldern
+
+# Cloning repository into the subfolder
+_process "Cloning repository into /var/www/html/$subfoldern ..."
+sudo git clone https://github.com/northvector/Raspberry-Pi-dashUI /var/www/html/$subfoldern
+if [[ $? -ne 0 ]]; then
+    echo "${RED}Failed to clone repository. Check your permissions and network connection.${RESET}"
+    exit 1
+fi
+_process "Repository cloned successfully."
+
 _process "Setting up valid permissions for /var/www/html/$subfoldern ..."
 chown -R ${whoami}:www-data /var/www/html/$subfoldern
 chmod -R 775 /var/www/html/$subfoldern
+
 _success "Installation done! To access the newly installed RPi dashboard open up a web browser and access URL: http://$hostn/$subfoldern !"
 _process "Please report any issues here: https://github.com/femto-code/Raspberry-Pi-Dashboard/issues. Thank you!"
