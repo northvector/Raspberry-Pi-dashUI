@@ -3,27 +3,27 @@
 <p align="center"><sub>Written in plain HTML5, CSS3, JavaScript and PHP (backend). <b>No extra software required!</b></sub></p>
 <br>
 <div align="center">
-  <a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/stargazers"><img src="https://img.shields.io/github/stars/femto-code/Raspberry-Pi-Dashboard?color=yellow" alt="Stars Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/network/members"><img src="https://img.shields.io/github/forks/femto-code/Raspberry-Pi-Dashboard?color=orange" alt="Forks Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/pulls"><img src="https://img.shields.io/github/issues-pr/femto-code/Raspberry-Pi-Dashboard" alt="Pull Requests Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/issues"><img src="https://img.shields.io/github/issues/femto-code/Raspberry-Pi-Dashboard" alt="Issues Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/femto-code/Raspberry-Pi-Dashboard?color=2b9348"></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/blob/master/LICENSE"><img src="https://img.shields.io/github/license/femto-code/Raspberry-Pi-Dashboard?color=2b9348" alt="License Badge"/></a>
+  <a href="https://github.com/northvector/Raspberry-Pi-dashUI/stargazers"><img src="https://img.shields.io/github/stars/northvector/Raspberry-Pi-dashUI?color=yellow" alt="Stars Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/network/members"><img src="https://img.shields.io/github/forks/northvector/Raspberry-Pi-dashUI?color=orange" alt="Forks Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/pulls"><img src="https://img.shields.io/github/issues-pr/northvector/Raspberry-Pi-dashUI" alt="Pull Requests Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/issues"><img src="https://img.shields.io/github/issues/northvector/Raspberry-Pi-dashUI" alt="Issues Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/northvector/Raspberry-Pi-dashUI?color=2b9348"></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/blob/master/LICENSE"><img src="https://img.shields.io/github/license/northvector/Raspberry-Pi-dashUI?color=2b9348" alt="License Badge"/></a>
 <br>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/"><img src="https://img.shields.io/github/repo-size/femto-code/Raspberry-Pi-Dashboard?color=important" alt="License Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/"><img src="https://img.shields.io/tokei/lines/github/femto-code/Raspberry-Pi-Dashboard?color=yellowgreen" alt="License Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/releases"><img src="https://img.shields.io/github/v/release/femto-code/Raspberry-Pi-Dashboard?color=success" alt="License Badge"/></a>
-<a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/commits"><img src="https://img.shields.io/github/last-commit/femto-code/Raspberry-Pi-Dashboard" alt="License Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/"><img src="https://img.shields.io/github/repo-size/northvector/Raspberry-Pi-dashUI?color=important" alt="License Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/"><img src="https://img.shields.io/tokei/lines/github/northvector/Raspberry-Pi-dashUI?color=yellowgreen" alt="License Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/releases"><img src="https://img.shields.io/github/v/release/northvector/Raspberry-Pi-dashUI?color=success" alt="License Badge"/></a>
+<a href="https://github.com/northvector/Raspberry-Pi-dashUI/commits"><img src="https://img.shields.io/github/last-commit/northvector/Raspberry-Pi-dashUI" alt="License Badge"/></a>
 </div>
 <br>
-<p align="center"><a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/issues">Report a bug</a> | <a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/discussions">Request a new feature</a> | <a href="https://github.com/femto-code/Raspberry-Pi-Dashboard/pulls">Help develop this project</a></p>
+<p align="center"><a href="https://github.com/northvector/Raspberry-Pi-dashUI/issues">Report a bug</a> | <a href="https://github.com/northvector/Raspberry-Pi-dashUI/discussions">Request a new feature</a> | <a href="https://github.com/northvector/Raspberry-Pi-dashUI/pulls">Help develop this project</a></p>
 
 ## Features
 
 - Live surveillance of RPi hardware (CPU temperature, frequency, load etc.) with customizable warning thresholds
 - Detailed software/hardware information (web server, PHP, storage / partition workload, core voltage, plugged USB devices, kernel version, model specifications, OS, CPU, network config)
-- Protected access with password login ([configure password](https://github.com/femto-code/Raspberry-Pi-Dashboard#configure-password-manually))
-- Shutdown / Reboot your Raspberry Pi with scheduling options ([setup instructions](https://github.com/femto-code/Raspberry-Pi-Dashboard#enable-shutdown--reboot-optional))
+- Protected access with password login ([configure password](https://github.com/northvector/Raspberry-Pi-dashUI#configure-password-manually))
+- Shutdown / Reboot your Raspberry Pi with scheduling options ([setup instructions](https://github.com/northvector/Raspberry-Pi-dashUI#enable-shutdown--reboot-optional))
 - Responsive mobile web app
 - Dark Theme (manual / auto)
 
@@ -40,7 +40,7 @@
 ## Use installer script (alpha)
 
 ```bash
-wget -O install.sh https://github.com/femto-code/Raspberry-Pi-Dashboard/raw/release/installer.sh
+wget -O install.sh https://github.com/northvector/Raspberry-Pi-dashUI/raw/release/installer.sh
 bash install.sh
 ```
 
@@ -89,7 +89,7 @@ _(if you are using another distro than Raspberry Pi OS the username of web serve
 ##### Background
 The `vcgencmd` command (specifically dedicated to RPi firmware) is a system command that requires certain hardware rights. Therefore one has to grant this particular right (to read hardware info) to e.g. `www-data` (under which web server is running). This is achieved by adding this user to a designated system group called *video*, which the standard user pi is part of by default.
 - only comes preinstalled on *Raspberry Pi OS*
-- in case of problems: please comment on [#12](https://github.com/femto-code/Raspberry-Pi-Dashboard/issues/12) (or [new issue](https://github.com/femto-code/Raspberry-Pi-Dashboard/issues/new))
+- in case of problems: please comment on [#12](https://github.com/northvector/Raspberry-Pi-dashUI/issues/12) (or [new issue](https://github.com/northvector/Raspberry-Pi-dashUI/issues/new))
 
 #### Enable shutdown / reboot (optional)
 
@@ -103,7 +103,7 @@ In order to use the remote shutdown functionality you have to give the user `www
 #### Configure password (manually)
 
 - Please be aware that there is a **more user-friendly** way now by using the dashboards options modal. However, the following manual way of changing the password might be helpful
-  - in case of wrong permissions (user `www-data` cannot change settings for you - [see issue #22](https://github.com/femto-code/Raspberry-Pi-Dashboard/issues/22) or [read here](https://github.com/femto-code/Raspberry-Pi-Dashboard#valid-permissions) for help and instructions to solve)
+  - in case of wrong permissions (user `www-data` cannot change settings for you - [see issue #22](https://github.com/northvector/Raspberry-Pi-dashUI/issues/22) or [read here](https://github.com/northvector/Raspberry-Pi-dashUI#valid-permissions) for help and instructions to solve)
   - forgotten password (and access to dashboard therefore impossible)
 
 1. Go to [https://www.md5-generator.de/](https://www.md5-generator.de/) and generate *MD5 encrypted passphrase*.
