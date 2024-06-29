@@ -539,17 +539,6 @@ if($auth){
 
 <!--End Modal(s)-->
 
-<!-- Footer -->
-<footer style="line-height: 40px; margin-top: 10px;" class="border-top py-1">
-  <div class="container text-center">
-    RPi Dashboard v1.1.5 <span class="text-muted">(Nov 2023)</span> <span id="dot">&middot;</span> <span id="notf" class="text-success">See the <a href="https://github.com/femto-code/Rasberry-Pi-Dashboard/releases">Github releases</a> for updates!</span><br />
-    <button class="btn btn-secondary mb-2" onclick="$('#exampleModal').modal('show');"><i class="bi bi-gear"></i>&nbsp;Options</button>
-    <hr style="margin-top: 0; margin-bottom: 0;">
-    femto-code&nbsp;<a href="https://github.com/femto-code"><i class="bi bi-github"></i></a> &middot; <span class="text-muted">2018 - 2023</span>
-  </div>
-</footer>
-<!-- End Footer -->
-
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap-5.3.2.bundle.min.js"></script>
 <script src="js/Chart-2.9.3.min.js"></script>
