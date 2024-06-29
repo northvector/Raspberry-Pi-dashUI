@@ -31,46 +31,27 @@
 
 ## Screenshots
 
-![Preview](img/preview.png?raw=true "Preview of dashboard in a web browser")
-
-| Mobile Light Theme                                | Mobile Dark Theme                               |
-|:-------------------------------------------------:|:-----------------------------------------------:|
-| ![](img/m2.png?raw=true)                          |                ![](img/m1.png?raw=true)         |
+![image](https://github.com/northvector/Raspberry-Pi-dashUI/assets/22070926/195a660b-4722-453c-9339-9bd2d7971bd8)
+![image](https://github.com/northvector/Raspberry-Pi-dashUI/assets/22070926/adda2d54-a4e1-4e42-83ac-264561d98511)
 
 ## Use installer script (alpha)
 
 ```bash
 wget -O install.sh https://github.com/northvector/Raspberry-Pi-dashUI/raw/release/installer.sh
-bash install.sh
+sudo bash install.sh
 ```
 
 ## Manual download and installation
 
 ### Prerequisites
 
-- Running web server (e.g. *Lighttpd* or *Apache*) with *PHP* installed
+- Running web server (e.g. *Lighttpd*) with *PHP* installed
 - Installed *Git* (comes preinstalled on Raspberry Pi OS / formerly Raspbian as well as other Linux distros)
 - Valid permissions set within `/var/www/html`
 
-#### Valid permissions
-
-The following configuration is the commonly recommended set-up for your web server folder and is meant to be secure to a certain level (with the **minimum** need of permissions):
-
-1. Make sure `www-data` group exists and add your current user to that system group:<br>
-_(if you are using another distro than Raspberry Pi OS the username of web server can differ)_<br>
-`sudo groupadd www-data`<br>
-`sudo usermod -a -G www-data www-data`<br>
-`sudo usermod -a -G www-data <yourlogin>` (replace `<yourlogin>` with your username)
-
-1. Give the ownership of web folder to the `www-data` group and *your* user.<br>The following commands ensure that you have _full_ access on the files within the web folder while group members (`www-data`) cannot edit/write for security reasons:<br>
-`sudo chown -R <yourlogin>:www-data /var/www/html` (replace `<yourlogin>` with your username)<br>
-`sudo chmod -R 755 /var/www/html`
-
-3. Reboot your RPi or log out and back in (for permission changes to take effect)
-
 ### Setup project
 
-- clone the project into your web folder:<br>`git clone https://github.com/femto-code/Rasberry-Pi-Dashboard.git /var/www/html/<your_subfolder_name>`<br>(replace `<your_subfolder_name>` with a name of your choice accordingly, you can also rename this base folder at any time afterwards)
+- clone the project into your web folder:<br>`git clone https://github.com/northvector/Rasberry-Pi-dashUI.git /var/www/html/<your_subfolder_name>`<br>(replace `<your_subfolder_name>` with a name of your choice accordingly, you can also rename this base folder at any time afterwards)
 - ***Alternatively*** download this repo as a ZIP file and extract it
 - Run in a terminal to set valid permissions:
   - `sudo chown -R <yourlogin>:www-data /var/www/html/<your_subfolder_name>`<br>(replace `<yourlogin>` with your username)
